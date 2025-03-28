@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="Chat.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <h2 id="chat-header">Chat</h2>
+
+        <!-- 🔹 User Selection Dropdown -->
+        <select id="userSelect">
+            <option value="" disabled selected>Select a user to chat</option>
+        </select>
+
+        <div id="chat-box"></div>
+        <div class="input-container">
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
+
+    <script src="scripts/chat.js"></script>
+</body>
+</html>

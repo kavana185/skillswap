@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap - Auth Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>SkillSwap Authentication</h1>
+
+        <!-- Signup Form -->
+        <div id="signup">
+            <h2>Signup</h2>
+            <input type="text" id="signupName" placeholder="Name" required>
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <button onclick="signup()">Signup</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- User Data Display -->
+        <div id="userData" style="display:none;">
+            <h2>Welcome, <span id="userName"></span>!</h2>
+            <p>Email: <span id="userEmail"></span></p>
+            <p>Skills Offered: <span id="skillsOffered"></span></p>
+            <p>Skills Wanted: <span id="skillsWanted"></span></p>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

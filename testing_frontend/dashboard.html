@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="dashboard.html">Home</a>
+            <a href="chat.html">chat</a>
+            <a href="profile.html">Profile</a>
+            <button onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <!-- Discover People -->
+    <section class="discover">
+        <h2>Discover People</h2>
+        <div class="swipe-container">
+            <div class="swipe-card">
+                <img src="p1.png" alt="User 1">
+                <h3>Jane Doe</h3>
+                <p>Skill Offered: Web Development</p>
+            </div>
+            <div class="swipe-card">
+                <img src="p2.png" alt="User 2">
+                <h3>John Smith</h3>
+                <p>Skill Offered: Graphic Design</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Skills -->
+    <section class="trending">
+        <h2>Trending Skills</h2>
+        <div class="trending-grid">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Digital Marketing</div>
+            <div class="skill-card">UI/UX Design</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+
+<style>
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #333;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a, nav button {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav button:hover {
+    color: #f5a623;
+}
+
+/* Discover People */
+.discover {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.swipe-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.swipe-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swipe-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Trending Skills */
+.trending {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.trending-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-card {
+    background: #6e8efb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+</style>
+
+</body>
+</html>
